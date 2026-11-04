@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fábrica Autônoma: da pauta ao post, sem você editar</title>
+<meta name="description" content="Agentes de IA pesquisam a pauta, escrevem o roteiro com fonte, narram, animam em código e agendam o post no TikTok, YouTube e Instagram. Entre na lista de espera do kit.">
+<link rel="canonical" href="https://jjoaomuniz.github.io/fabrica-autonoma/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#07070b">
+<meta property="og:title" content="Fábrica Autônoma: sua fábrica de vídeos com IA">
+<meta property="og:description" content="Da pauta ao post nas 3 redes, feito por agentes de IA. Lista de espera aberta.">
+<meta property="og:image" content="https://jjoaomuniz.github.io/fabrica-autonoma/img/capa-pao-geladeira.jpg">
+<meta property="og:url" content="https://jjoaomuniz.github.io/fabrica-autonoma/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=1793772269">
+</head>
+<body>
+
+<header class="bar">
+  <a class="wordmark" href="#topo">Fábrica Autônoma</a>
+  <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span><span></span></button>
+  <nav id="menu" aria-label="Seções">
+    <a href="#como">Como funciona</a>
+    <a href="#kit">O kit</a>
+    <a href="#perguntas">Perguntas</a>
+  </nav>
+  <a class="btn btn-small" href="#lista">Entrar na lista</a>
+</header>
+
+<main id="topo">
+
+  <!-- HERO: o quadro 9:16 gigante, recortado pela tela, com as capas reais girando em 3D -->
+  <section class="hero" aria-labelledby="titulo">
+    <div class="hero-copy">
+      <h1 id="titulo" class="rise">Da pauta ao post,<br>sem você editar</h1>
+      <p class="lead rise">Agentes de IA pesquisam a pauta, escrevem o roteiro com fonte, narram, animam e agendam o post no TikTok, YouTube e Instagram. Você só aprova.</p>
+      <div class="hero-act rise">
+        <a class="btn" href="#lista">Quero o preço de fundador</a>
+        <p class="note">Fundador: R$&nbsp;197. Depois da abertura, R$&nbsp;397. Entrar na lista é grátis.</p>
+      </div>
+      <div class="hero-proof rise">
+        <img src="img/camarao-avatar.jpg" width="160" height="160" alt="">
+        <div>
+          <p>Números reais do <a href="#como">@camaraoexplica</a>, canal feito por esta fábrica</p>
+          <ul>
+            <li><b>1,2 mil</b> views num só Short</li>
+            <li><b>6,4 mil</b> views em 48 h no YouTube</li>
+            <li><b>20+</b> episódios prontos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hero-frame" aria-hidden="true">
+      <div class="hero-stage" id="stage">
+        <!-- sem script: as capas aparecem paradas -->
+        <img src="img/capa-pao-geladeira.jpg" width="540" height="960" alt="" fetchpriority="high">
+        <img src="img/capa-ar-17.jpg" width="540" height="960" alt="">
+        <img src="img/capa-descarga-tampa.jpg" width="540" height="960" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE: os dois arquétipos de gancho da fábrica, lado a lado -->
+  <section class="ab" id="ab" data-mode="a" aria-labelledby="ab-titulo">
+    <div class="ab-copy">
+      <h2 id="ab-titulo">Gancho <span class="ab-l" data-l="a">A</span> ou <span class="ab-l" data-l="b">B</span>?</h2>
+      <p>A fábrica abre os vídeos com dois arquétipos de gancho e produz o mesmo lote nos dois, para descobrir qual segura mais gente nos 3 primeiros segundos. Troque e veja o primeiro quadro de verdade.</p>
+      <div class="ab-info">
+        <p class="ab-name" id="ab-name">Gancho A: Título de impacto</p>
+        <p class="ab-desc" id="ab-desc">A pergunta que o público pesquisa, em letras enormes desde o quadro 0.</p>
+        <p class="ab-cap" id="ab-cap">Na tela: “Pão na geladeira dura mais?”</p>
+      </div>
+    </div>
+    <div class="ab-control" data-ui role="radiogroup" aria-label="Arquétipo do gancho">
+      <button type="button" role="radio" aria-checked="true" data-v="a"><b>A</b><span>Título de impacto</span></button>
+      <button type="button" role="radio" aria-checked="false" data-v="b"><b>B</b><span>Personagem em cena</span></button>
+      <p class="sr-only" aria-live="polite" id="ab-live"></p>
+    </div>
+    <figure class="ab-shot shutter">
+      <img id="ab-img" src="img/gancho-a.jpg" width="720" height="1280" alt="Primeiro quadro do vídeo Pão na geladeira dura mais?, com título grande sobre a geladeira">
+    </figure>
+  </section>
+
+  <!-- COMO FUNCIONA: a linha de produção como uma barra -->
+  <section class="how" id="como" aria-labelledby="como-titulo">
+    <h2 id="como-titulo" class="rise">Como a fábrica funciona</h2>
+    <p class="how-lead rise">Cinco etapas tocadas pelos agentes. Você aprova o roteiro e acompanha o resto.</p>
+    <ol class="line">
+      <li style="--g:3" class="rise"><span class="seg"><span class="step-t">Roteiro com fonte</span><span class="step-n" aria-hidden="true">01</span></span><p>Primeiro, um agente pesquisa a pauta e escreve a fala. Número sem fonte é cortado.</p></li>
+      <li style="--g:1.4" class="rise"><span class="seg"><span class="step-t">Voz de IA</span><span class="step-n" aria-hidden="true">02</span></span><p>Depois, a narração sai com o tempo de cada palavra.</p></li>
+      <li style="--g:3" class="rise"><span class="seg"><span class="step-t">Animação em código</span><span class="step-n" aria-hidden="true">03</span></span><p>Então as cenas são programadas e acompanham a fala.</p></li>
+      <li style="--g:1.6" class="rise"><span class="seg"><span class="step-t">Render</span><span class="step-n" aria-hidden="true">04</span></span><p>O vídeo sai em 1080×1920, 60 quadros por segundo.</p></li>
+      <li style="--g:2.2" class="rise"><span class="seg"><span class="step-t">3 redes</span><span class="step-n" aria-hidden="true">05</span></span><p>Por fim, capa, legenda e agendamento no TikTok, Shorts e Reels.</p></li>
+    </ol>
+    <div class="how-proof">
+      <div class="clip shutter-soft">
+        <video id="demo" src="img/loop-pao.mp4" poster="img/loop-pao-poster.jpg" width="540" height="960" muted loop playsinline autoplay preload="metadata" aria-label="Trecho de um vídeo feito pela fábrica: gráfico mostrando que o frio acelera o endurecimento do pão, com narração e legenda sincronizadas"></video>
+        <button type="button" class="sound" id="som" aria-pressed="false" hidden>
+          <svg class="i-off" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="m16 9 5 6M21 9l-5 6"/></svg>
+          <svg class="i-on" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          <span id="som-txt">Ativar som</span>
+        </button>
+      </div>
+      <div class="how-text">
+        <h3 class="rise">Feito pela fábrica</h3>
+        <p class="rise">Este trecho é de um vídeo real, feito do roteiro ao render pelos agentes. Ligue o som: a narração e a legenda andam juntas, palavra por palavra.</p>
+        <p class="rise">Seis vídeos assim ficaram prontos numa tarde, com capa, story, legenda para cada rede e tudo enviado ao Google Drive.</p>
+        <div class="proof rise">
+          <img class="proof-av" src="img/camarao-avatar.jpg" width="160" height="160" loading="lazy" alt="Mascote do canal O Camarão Te Explica">
+          <div class="proof-body">
+            <p class="proof-h">Em produção real no @camaraoexplica</p>
+            <p class="proof-sub">O vídeo deste trecho passou de 1,2 mil views no YouTube Shorts. A linha publica 3 vídeos por dia no TikTok e no Shorts e 1 Reel por dia no Instagram.</p>
+            <p class="proof-links">
+              <a href="https://www.tiktok.com/@camaraoexplica" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.8 2.4 4.6 5.5 4.8"/></svg>Ver no TikTok<span class="sr-only"> (abre em nova aba)</span></a>
+              <a href="https://www.instagram.com/camaraoexplica/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg>Ver no Instagram<span class="sr-only"> (abre em nova aba)</span></a>
+            </p>
+          </div>
+        </div>
+        <p class="rise">O kit ensina a montar a mesma linha no seu computador, para o seu nicho.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTA RÁPIDA: só o e-mail, logo depois da prova -->
+  <section class="rapida" id="rapida" aria-labelledby="rapida-titulo">
+    <div class="rapida-box rise">
+      <div class="rapida-copy">
+        <h2 id="rapida-titulo">Gostou do que viu?</h2>
+        <p>Deixe seu e-mail e garanta o kit por R$&nbsp;197, o preço de fundador. Depois da abertura, sobe para R$&nbsp;397.</p>
+      </div>
+      <form id="form-rapida" class="rapida-form" novalidate>
+        <label for="email-rapido" class="sr-only">E-mail</label>
+        <input id="email-rapido" name="email" type="email" inputmode="email" autocomplete="email" placeholder="seu@email.com" required>
+        <button type="submit" class="btn">Entrar na lista</button>
+        <p class="rapida-legal" id="rapida-msg" aria-live="polite">Grátis. Ao entrar, você aceita receber o aviso do kit por e-mail. Sem spam.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- COMPARATIVO: o trabalho braçal contra a esteira de agentes -->
+  <section class="vs" id="comparativo" aria-labelledby="vs-titulo">
+    <div class="vs-head">
+      <h2 id="vs-titulo" class="rise">Na mão × na fábrica</h2>
+      <p class="rise">As mesmas cinco tarefas de todo vídeo curto. A diferença é quem faz cada uma.</p>
+    </div>
+    <div class="vs-cols">
+      <div class="vs-col vs-manual rise rise-l">
+        <h3>Produção manual</h3>
+        <ul>
+          <li><b>Pauta</b><span>Horas rolando o feed atrás de assunto e conferindo cada número por conta própria.</span></li>
+          <li><b>Edição</b><span>Montar cena por cena no CapCut, arrastando texto e efeito na mão.</span></li>
+          <li><b>Voz e legenda</b><span>Gravar a narração, cortar os respiros e legendar palavra por palavra.</span></li>
+          <li><b>Entrega</b><span>Exportar, renomear, fazer a capa e escrever a legenda de cada rede.</span></li>
+          <li><b>Postagem</b><span>Abrir app por app e postar rede por rede, no horário certo.</span></li>
+        </ul>
+      </div>
+      <div class="vs-col vs-fab rise rise-r">
+        <h3>Fábrica Autônoma</h3>
+        <ul>
+          <li><b>Pauta</b><span>Um agente pesquisa o que está em alta e escreve o roteiro. Checagem de fonte obrigatória: número sem fonte é cortado.</span></li>
+          <li><b>Edição</b><span>Animação programada em código no Remotion, renderizada em 1080×1920 a 60 fps.</span></li>
+          <li><b>Voz e legenda</b><span>Voz de IA com o tempo de cada palavra; a legenda acende sincronizada, sozinha.</span></li>
+          <li><b>Entrega</b><span>Pacote pronto por vídeo no Google Drive: vídeo, capa, story e legenda de cada rede.</span></li>
+          <li><b>Postagem</b><span>Agendamento no TikTok, Shorts e Reels pelo navegador, com conferência de que o post saiu.</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="vs-foot rise">Na fábrica, você entra em dois momentos: aprova o roteiro e acompanha o resultado.</p>
+  </section>
+
+  <!-- O KIT: três cartões técnicos + parede de capas reais -->
+  <section class="kit" id="kit" aria-labelledby="kit-titulo">
+    <div class="kit-list">
+      <h2 id="kit-titulo" class="rise">O que vem no kit</h2>
+      <p class="kit-lead rise">Onze peças em três frentes. É a mesma linha que produz o @camaraoexplica.</p>
+      <div class="kit-card rise">
+        <div class="kit-card-h"><h3>Produção</h3><span class="tag">Do roteiro ao render</span></div>
+        <ul>
+          <li><span>Projeto modelo em Remotion, pronto para copiar</span><em>React + TypeScript</em></li>
+          <li><span>Kit de cenas animadas</span><em>gancho, gráfico, esquema</em></li>
+          <li><span>Narração automática com legenda palavra a palavra</span><em>voz grátis ou paga</em></li>
+          <li><span>Checagem de fatos com fonte</span><em>em todo roteiro</em></li>
+        </ul>
+      </div>
+      <div class="kit-card rise">
+        <div class="kit-card-h"><h3>Publicação</h3><span class="tag tag-c">3 redes</span></div>
+        <ul>
+          <li><span>Pacote pronto por vídeo</span><em>TikTok, Shorts, Reels</em></li>
+          <li><span>Capa e story gerados junto</span><em>1080×1920</em></li>
+          <li><span>Envio automático ao Google Drive</span><em>por vídeo</em></li>
+          <li><span>Agendamento pelo navegador com agentes</span><em>3 redes</em></li>
+        </ul>
+      </div>
+      <div class="kit-card rise">
+        <div class="kit-card-h"><h3>Estratégia</h3><span class="tag tag-i">Com fontes</span></div>
+        <ul>
+          <li><span>Manual do algoritmo de cada rede</span><em>com fontes</em></li>
+          <li><span>Engenharia reversa de contas que viralizaram</span><em>10 perfis</em></li>
+          <li><span>Regras de gancho, retenção e loop</span><em>prontas para a IA</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wall" id="wall" role="region" aria-label="Capas de vídeos feitos pela fábrica">
+      <img class="rise rise-s" src="img/capa-pao-geladeira.jpg" width="540" height="960" loading="lazy" alt="Capa: Pão na geladeira dura mais?">
+      <img class="rise rise-s" src="img/capa-ar-17.jpg" width="540" height="960" loading="lazy" alt="Capa: Ar no 17 gela mais rápido?">
+      <img class="rise rise-s" src="img/capa-descarga-tampa.jpg" width="540" height="960" loading="lazy" alt="Capa: Descarga de tampa aberta?">
+      <img class="rise rise-s" src="img/capa-celular-arroz.jpg" width="540" height="960" loading="lazy" alt="Capa: Celular molhado? Não põe no arroz">
+      <img class="rise rise-s" src="img/capa-carregar-noite.jpg" width="540" height="960" loading="lazy" alt="Capa: Carregar à noite vicia?">
+      <img class="rise rise-s" src="img/capa-sabao-maquina.jpg" width="540" height="960" loading="lazy" alt="Capa: Mais sabão lava pior?">
+    </div>
+  </section>
+
+
+  <!-- PERGUNTAS -->
+  <section class="faq" id="perguntas" aria-labelledby="faq-titulo">
+    <h2 id="faq-titulo">Perguntas</h2>
+    <div class="tiles">
+      <details name="faq" open><summary>Preciso saber programar?</summary><p>Não para usar. Você conversa com o agente em português e ele escreve o código. Saber o básico de terminal ajuda, e o kit ensina esse básico passo a passo.</p></details>
+      <details name="faq"><summary>Quanto vai custar?</summary><p>R$&nbsp;197 para quem está na lista, no preço de fundador. Depois da abertura geral, R$&nbsp;397. Entrar na lista é grátis e não obriga a comprar.</p></details>
+      <details name="faq"><summary>Quando abre?</summary><p>Assim que o kit estiver gravado e testado. A lista recebe um e-mail com a data antes de todo mundo.</p></details>
+      <details name="faq"><summary>Funciona para outro nicho?</summary><p>Sim. A linha é a mesma: troque o tema, o mascote e as cores. Funciona melhor em vídeo explicativo, curiosidade, notícia e dicas.</p></details>
+      <details name="faq"><summary>Que ferramentas pagas eu preciso?</summary><p>Uma assinatura do Claude para os agentes. A voz pode ser grátis (rascunho) ou ElevenLabs. Remotion, a animação, é grátis para uso individual.</p></details>
+      <details name="faq"><summary>A IA posta sozinha mesmo?</summary><p>Ela agenda pelo navegador, com você logado nas suas contas, e confere se o post saiu. Vídeo com link de produto do TikTok Shop ainda vai pelo app do celular.</p></details>
+      <details name="faq"><summary>E as regras das plataformas para vídeo de IA?</summary><p>O kit segue elas: rótulo de conteúdo de IA ligado, um gancho e uma cena próprios em cada vídeo e nada de repostar o mesmo vídeo. É o oposto da produção em massa que as redes cortam.</p></details>
+      <details name="faq"><summary>Vou ganhar dinheiro com isso?</summary><p>O kit ensina a produzir e postar com consistência. Resultado de views e de renda depende do seu tema e do seu público, e ninguém pode prometer.</p></details>
+    </div>
+  </section>
+
+  <!-- LISTA -->
+  <section class="cta" id="lista" aria-labelledby="cta-titulo">
+    <div class="cta-forms">
+    <h2 id="cta-titulo" class="rise">Garanta o preço de fundador</h2>
+    <div class="oferta rise">
+      <p class="oferta-h">Só para quem está na lista</p>
+      <p class="oferta-preco"><b>R$&nbsp;197</b><span>preço de fundador · <s>R$&nbsp;397</s> na abertura geral</span></p>
+      <ul>
+        <li>Preço de fundador travado para quem está na lista</li>
+        <li>Aviso de abertura antes de todo mundo</li>
+        <li>Os números reais do canal do Camarão, de 0 em diante</li>
+      </ul>
+    </div>
+    <form id="form-lista" class="cadastro" novalidate>
+      <div class="campos">
+        <label for="email">E-mail <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="seu@email.com" required></label>
+        <label for="whatsapp">WhatsApp <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(85) 99999-9999" required></label>
+        <label for="nome"><span>Nome <span class="opt">(opcional)</span></span><input id="nome" name="nome" autocomplete="name" placeholder="Como você se chama"></label>
+      </div>
+      <label class="aceite" for="aceite"><input id="aceite" name="aceite" type="checkbox" required> Aceito receber o aviso do kit por e-mail e WhatsApp</label>
+      <div class="send">
+        <button type="submit" class="btn">Entrar na lista</button>
+        <p class="free">Grátis e sem compromisso de compra.</p>
+      </div>
+      <p class="after" id="after" aria-live="polite">Seus dados servem só para avisar do kit e falar com você sobre ele, antes de todo mundo. Sem spam e sem repassar para ninguém. Para sair da lista, é só responder o e-mail.</p>
+    </form>
+
+    <form id="form-perfil" class="perfil" hidden>
+      <p class="perfil-ok" id="ok" tabindex="-1">Pronto, você está na lista. Responda rapidinho para o kit sair do seu jeito (opcional):</p>
+      <fieldset>
+        <legend>Você já posta vídeos?</legend>
+        <label><input type="radio" name="ja_posta" value="nunca"> Ainda não</label>
+        <label><input type="radio" name="ja_posta" value="comecando"> Comecei agora</label>
+        <label><input type="radio" name="ja_posta" value="frequente"> Posto sempre</label>
+      </fieldset>
+      <fieldset>
+        <legend>Quanto você sabe de programação?</legend>
+        <label><input type="radio" name="nivel" value="zero"> Nada</label>
+        <label><input type="radio" name="nivel" value="basico"> O básico</label>
+        <label><input type="radio" name="nivel" value="dev"> Programo</label>
+      </fieldset>
+      <fieldset>
+        <legend>O que você quer com isso?</legend>
+        <label><input type="radio" name="objetivo" value="renda"> Renda extra</label>
+        <label><input type="radio" name="objetivo" value="marca"> Divulgar meu negócio</label>
+        <label><input type="radio" name="objetivo" value="agencia"> Vender para clientes</label>
+        <label><input type="radio" name="objetivo" value="crescer"> Crescer um perfil</label>
+      </fieldset>
+      <fieldset>
+        <legend>Quantos seguidores você tem no perfil principal?</legend>
+        <label><input type="radio" name="seguidores" value="0-1k"> Até 1 mil</label>
+        <label><input type="radio" name="seguidores" value="1k-10k"> 1 a 10 mil</label>
+        <label><input type="radio" name="seguidores" value="10k-100k"> 10 a 100 mil</label>
+        <label><input type="radio" name="seguidores" value="100k+"> Mais de 100 mil</label>
+      </fieldset>
+      <div class="campos campos-um">
+        <label for="instagram"><span>Seu Instagram <span class="opt">(opcional)</span></span><input id="instagram" name="instagram" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="@seuperfil"></label>
+        <label for="nicho">Sobre o que são (ou seriam) seus vídeos? <input id="nicho" name="nicho" maxlength="80" placeholder="Ex.: receitas, finanças, curiosidades"></label>
+      </div>
+      <div class="send">
+        <button type="submit" class="btn">Enviar respostas</button>
+        <p class="after" id="after2" aria-live="polite"></p>
+      </div>
+    </form>
+    </div>
+    <figure class="cta-shot">
+      <img class="rise rise-s" src="img/story-pao.jpg" width="540" height="960" loading="lazy" alt="Story de divulgação gerado pela fábrica para o vídeo Pão na geladeira dura mais?">
+      <figcaption>Até o story de divulgação sai pronto da fábrica.</figcaption>
+    </figure>
+  </section>
+</main>
+
+<div class="fixa" id="fixa" inert>
+  <a class="btn" href="#lista">Entrar na lista</a>
+  <span>Fundador: R$&nbsp;197</span>
+</div>
+
+<footer class="end">
+  <div class="mark" role="img" aria-label="Fábrica Autônoma">
+    <span style="--h:100%">F</span><span style="--h:78%" class="c">Á</span><span style="--h:90%">B</span><span style="--h:64%" class="s">R</span><span style="--h:96%">I</span><span style="--h:72%" class="c">C</span><span style="--h:86%">A</span>
+  </div>
+  <div class="end-cols">
+    <div><p class="end-h">Página</p><a href="#como">Como funciona</a><a href="#comparativo">Na mão × na fábrica</a><a href="#kit">O kit</a><a href="#perguntas">Perguntas</a></div>
+    <div><p class="end-h">Feito na fábrica</p><a href="https://www.tiktok.com/@camaraoexplica" target="_blank" rel="noopener noreferrer">TikTok do Camarão<span class="sr-only"> (abre em nova aba)</span></a><a href="https://www.instagram.com/camaraoexplica/" target="_blank" rel="noopener noreferrer">Instagram do Camarão<span class="sr-only"> (abre em nova aba)</span></a></div>
+    <div class="end-contact"><p class="end-h">Contato</p><p>Mensagem direta no Instagram @camaraoexplica</p></div>
+    <div><p class="end-h">Legal</p><a href="privacidade.html">Política de privacidade</a><a href="termos.html">Termos de uso</a><p class="end-yt"><svg aria-hidden="true" width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="4" fill="#FF0000"/><path d="M8 4l5 3-5 3z" fill="#fff"/></svg> Usa os Serviços de API do YouTube</p></div>
+  </div>
+  <div class="end-last">
+    <p>© 2026 Fábrica Autônoma</p>
+    <a class="btn btn-small" href="#lista">Entrar na lista</a>
+  </div>
+</footer>
+
+<script src="config.js?v=1793772269"></script>
+<script src="main.js?v=1793772269" defer></script>
+</body>
+</html>
